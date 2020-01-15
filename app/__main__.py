@@ -8,9 +8,9 @@ __author__ = 'Lucas Góes'
 __email__ = 'lucas.rd.goes@gmail.com'
 """
 
+import logging
 import sys
 import time
-import logging
 import warnings
 
 import coloredlogs
@@ -151,7 +151,7 @@ def main():
 
 	# Waiting until the application is stopped.
 	try:
-		while(True):
+		while True:
 			time.sleep(10)
 	except KeyboardInterrupt:
 		for interface_adapter in interface_adapters:
